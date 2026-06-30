@@ -40,9 +40,9 @@
 		}
 	}
 
-	q.setEscortedEntity = @(__original) function( _e )
+	q.setEscortedEntity = @(__original) function( _e, _fastEscort = false )
 	{
-		__original(_e);
+		__original(_e, _fastEscort);
 		if (this.m.EscortedEntity != null && !this.m.EscortedEntity.isNull() && this.m.EscortedEntity.isAlive())
 		{
 			this.swifter_updateSpeeds();
